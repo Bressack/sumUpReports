@@ -1,0 +1,94 @@
+/* includes alternating gray and white with on-hover color */
+
+body {
+    background: #424242;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    color: red;
+}
+
+.mystyle {
+    font-size: 11pt;
+    font-family: Arial;
+    border-collapse: collapse;
+    border: 1px solid silver;
+
+}
+
+.mystyle td, th {
+    padding: 5px;
+}
+
+.mystyle tbody tr:nth-child(even) {
+    background: #a4a4a4;
+}
+.mystyle tbody tr:nth-child(odd) {
+    background: #848484;
+}
+
+.mystyle tbody tr:hover {
+    background: #b4b4b4;
+    cursor: pointer;
+}
+
+.blockmain {
+    display: table;
+    margin: 20px;
+}
+.blockmain div {
+    display: table-cell;
+    padding: 20px;
+}
+
+.block2 tr > th:nth-child(1) {
+    column-width: 230px;
+}
+
+.block2 tr > th:nth-child(2) {
+    column-width: 80px;
+}
+
+.total tr:nth-child(1) td {
+    /* font-size: 16px; */
+    font-weight: bold;
+}
+
+.block1 table:nth-child(1) tr > th:nth-child(1) {
+    column-width: 250px !important;
+}
+
+.legend {
+    margin: 10px 10px 10px 0px;
+}
+
+.onelegend {
+    display: table;
+    margin: 5px;
+}
+
+.legend_desc {
+    margin-left: 10px;
+}
+
+.box {
+    display: table-cell;
+    background-color: red;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+.box-median {
+    background: #9d0202;
+}
+
+.box-eighty {
+    background: #376a21;
+}
+
+.box-twenty {
+    background: #5c3de2;
+}

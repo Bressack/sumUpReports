@@ -1,0 +1,425 @@
+
+<html>
+  <head><title>HTML Pandas Dataframe with CSS</title></head>
+  <body>
+    <div class="title">
+        Afterwork 09/11/2022
+    </div>
+    <div class="legend">
+        <div class="onelegend">
+            <div class="box box-median"></div>
+            <div class="legend_desc">Ligne gain net median</div>
+        </div>
+        <div><div class="onelegend">
+            <div class="box box-eighty"></div>
+            <div class="legend_desc">80% des gains net de la ligne 0 a celle ci</div>
+        </div></div>
+    </div>
+    <div class="blockmain">
+        <div class="block1">
+            <table border="1" class="dataframe mystyle total">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Quantity</th>
+      <th>Prix à l'Unité</th>
+      <th># vendus en CASH</th>
+      <th>Cash (€)</th>
+      <th># vendus en Card</th>
+      <th>Card Brut (€)</th>
+      <th>Card Net (€)</th>
+      <th>Total Brut (€)</th>
+      <th>Total Net (€)</th>
+      <th>Total Tax SumUp (€)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>TOTAL</th>
+      <td>686</td>
+      <td>3.09</td>
+      <td>71</td>
+      <td>209.57</td>
+      <td>615</td>
+      <td>1,939.00</td>
+      <td>1,906.20</td>
+      <td>2,148.57</td>
+      <td>2,115.77</td>
+      <td>32.80</td>
+    </tr>
+  </tbody>
+</table>
+            <table border="1" class="dataframe mystyle stats">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Quantity</th>
+      <th>Prix à l'Unité</th>
+      <th># vendus en CASH</th>
+      <th>Cash (€)</th>
+      <th># vendus en Card</th>
+      <th>Card Brut (€)</th>
+      <th>Card Net (€)</th>
+      <th>Total Brut (€)</th>
+      <th>Total Net (€)</th>
+      <th>Total Tax SumUp (€)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Pinte</th>
+      <td>384</td>
+      <td>3.00</td>
+      <td>31</td>
+      <td>93.00</td>
+      <td>353</td>
+      <td>1,059.00</td>
+      <td>1,041.24</td>
+      <td>1,152.00</td>
+      <td>1,134.24</td>
+      <td>17.76</td>
+    </tr>
+    <tr>
+      <th>Cocktail</th>
+      <td>183</td>
+      <td>3.00</td>
+      <td>25</td>
+      <td>75.00</td>
+      <td>158</td>
+      <td>474.00</td>
+      <td>466.02</td>
+      <td>549.00</td>
+      <td>541.02</td>
+      <td>7.98</td>
+    </tr>
+    <tr>
+      <th>Cocktail premium</th>
+      <td>37</td>
+      <td>6.00</td>
+      <td>4</td>
+      <td>24.00</td>
+      <td>33</td>
+      <td>198.00</td>
+      <td>194.65</td>
+      <td>222.00</td>
+      <td>218.65</td>
+      <td>3.35</td>
+    </tr>
+    <tr>
+      <th>Pichet</th>
+      <td>10</td>
+      <td>8.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>10</td>
+      <td>80.00</td>
+      <td>78.60</td>
+      <td>80.00</td>
+      <td>78.60</td>
+      <td>1.40</td>
+    </tr>
+    <tr>
+      <th>Croque-Monsieur</th>
+      <td>15</td>
+      <td>3.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>15</td>
+      <td>45.00</td>
+      <td>44.25</td>
+      <td>45.00</td>
+      <td>44.25</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <th>Saucisson</th>
+      <td>19</td>
+      <td>2.00</td>
+      <td>5</td>
+      <td>10.00</td>
+      <td>14</td>
+      <td>28.00</td>
+      <td>27.46</td>
+      <td>38.00</td>
+      <td>37.46</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <th>Demi</th>
+      <td>25</td>
+      <td>1.50</td>
+      <td>5</td>
+      <td>7.50</td>
+      <td>20</td>
+      <td>30.00</td>
+      <td>29.42</td>
+      <td>37.50</td>
+      <td>36.92</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>Pâté LLD</th>
+      <td>2</td>
+      <td>5.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>10.00</td>
+      <td>9.82</td>
+      <td>10.00</td>
+      <td>9.82</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <th>Redbull</th>
+      <td>6</td>
+      <td>1.50</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>6</td>
+      <td>9.00</td>
+      <td>8.84</td>
+      <td>9.00</td>
+      <td>8.84</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <th>Cache Caméra</th>
+      <td>3</td>
+      <td>1.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>3.00</td>
+      <td>2.95</td>
+      <td>3.00</td>
+      <td>2.95</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>Cocktail pre soft</th>
+      <td>1</td>
+      <td>3.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>1</td>
+      <td>3.00</td>
+      <td>2.95</td>
+      <td>3.00</td>
+      <td>2.95</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>Don BDE de Saky le relou</th>
+      <td>1</td>
+      <td>0.07</td>
+      <td>1</td>
+      <td>0.07</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.07</td>
+      <td>0.07</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <div class="block2">
+            <table border="1" class="dataframe mystyle">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Quantities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Clients</th>
+      <td>120</td>
+    </tr>
+    <tr>
+      <th>Articles vendus</th>
+      <td>686</td>
+    </tr>
+    <tr>
+      <th>Staffs</th>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+            <table border="1" class="dataframe mystyle">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Gains (€)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Total Brut</th>
+      <td>2,148.57</td>
+    </tr>
+    <tr>
+      <th>Total Net</th>
+      <td>2,115.77</td>
+    </tr>
+    <tr>
+      <th>Card Brut</th>
+      <td>1,939.00</td>
+    </tr>
+    <tr>
+      <th>Card Net</th>
+      <td>1,906.20</td>
+    </tr>
+    <tr>
+      <th>Cash</th>
+      <td>209.57</td>
+    </tr>
+    <tr>
+      <th>SumUp Fees</th>
+      <td>32.80</td>
+    </tr>
+  </tbody>
+</table>
+            <table border="1" class="dataframe mystyle">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Stats</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Prix moyen d'une conso (€)</th>
+      <td>3.09</td>
+    </tr>
+    <tr>
+      <th>Panier moyen Brut (€)</th>
+      <td>4.11</td>
+    </tr>
+    <tr>
+      <th>Panier moyen Net (€)</th>
+      <td>4.05</td>
+    </tr>
+    <tr>
+      <th>Conso par client</th>
+      <td>5.72</td>
+    </tr>
+    <tr>
+      <th>Gain moyen par Client Brut (€)</th>
+      <td>23.51</td>
+    </tr>
+    <tr>
+      <th>Gain moyen par Client Net (€)</th>
+      <td>23.15</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    </div>
+  </body>
+</html>
+
+<style>/* includes alternating gray and white with on-hover color */
+
+body {
+    background: #424242;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    color: red;
+}
+
+.mystyle {
+    font-size: 11pt;
+    font-family: Arial;
+    border-collapse: collapse;
+    border: 1px solid silver;
+
+}
+
+.mystyle td, th {
+    padding: 5px;
+}
+
+.mystyle tbody tr:nth-child(even) {
+    background: #a4a4a4;
+}
+.mystyle tbody tr:nth-child(odd) {
+    background: #848484;
+}
+
+.mystyle tbody tr:hover {
+    background: #b4b4b4;
+    cursor: pointer;
+}
+
+.blockmain {
+    display: table;
+    margin: 20px;
+}
+.blockmain div {
+    display: table-cell;
+    padding: 20px;
+}
+
+.block2 tr > th:nth-child(1) {
+    column-width: 230px;
+}
+
+.block2 tr > th:nth-child(2) {
+    column-width: 80px;
+}
+
+.total tr:nth-child(1) td {
+    /* font-size: 16px; */
+    font-weight: bold;
+}
+
+.block1 table:nth-child(1) tr > th:nth-child(1) {
+    column-width: 250px !important;
+}
+
+.legend {
+    margin: 10px 10px 10px 0px;
+}
+
+.onelegend {
+    display: table;
+    margin: 5px;
+}
+
+.legend_desc {
+    margin-left: 10px;
+}
+
+.box {
+    display: table-cell;
+    background-color: red;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+.box-median {
+    background: #9d0202;
+}
+
+.box-eighty {
+    background: #376a21;
+}
+
+.box-twenty {
+    background: #5c3de2;
+}
+
+.stats tbody tr:nth-child(1) {
+    background: #9d0202;
+}
+.stats tbody tr:nth-child(3) {
+    background: #376a21;
+}
+</style>

@@ -1,0 +1,607 @@
+
+<html>
+  <head><title>HTML Pandas Dataframe with CSS</title></head>
+  <body>
+    <div class="title">
+        Goodies 09/11/2022
+    </div>
+    <div class="legend">
+        <div class="onelegend">
+            <div class="box box-median"></div>
+            <div class="legend_desc">Ligne gain net median</div>
+        </div>
+        <div><div class="onelegend">
+            <div class="box box-eighty"></div>
+            <div class="legend_desc">80% des gains net de la ligne 0 a celle ci</div>
+        </div></div>
+    </div>
+    <div class="blockmain">
+        <div class="block1">
+            <table border="1" class="dataframe mystyle total">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Quantity</th>
+      <th>Prix à l'Unité</th>
+      <th># vendus en CASH</th>
+      <th>Cash (€)</th>
+      <th># vendus en Card</th>
+      <th>Card Brut (€)</th>
+      <th>Card Net (€)</th>
+      <th>Total Brut (€)</th>
+      <th>Total Net (€)</th>
+      <th>Total Tax SumUp (€)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>TOTAL</th>
+      <td>180</td>
+      <td>12.46</td>
+      <td>25</td>
+      <td>215.50</td>
+      <td>155</td>
+      <td>1,391.50</td>
+      <td>1,367.27</td>
+      <td>1,607.00</td>
+      <td>1,582.77</td>
+      <td>24.23</td>
+    </tr>
+  </tbody>
+</table>
+            <table border="1" class="dataframe mystyle stats">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Quantity</th>
+      <th>Prix à l'Unité</th>
+      <th># vendus en CASH</th>
+      <th>Cash (€)</th>
+      <th># vendus en Card</th>
+      <th>Card Brut (€)</th>
+      <th>Card Net (€)</th>
+      <th>Total Brut (€)</th>
+      <th>Total Net (€)</th>
+      <th>Total Tax SumUp (€)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Hoodie</th>
+      <td>6</td>
+      <td>42.00</td>
+      <td>1</td>
+      <td>42.00</td>
+      <td>5</td>
+      <td>210.00</td>
+      <td>206.30</td>
+      <td>252.00</td>
+      <td>248.30</td>
+      <td>3.70</td>
+    </tr>
+    <tr>
+      <th>Bonnet</th>
+      <td>14</td>
+      <td>12.00</td>
+      <td>1</td>
+      <td>12.00</td>
+      <td>13</td>
+      <td>156.00</td>
+      <td>153.27</td>
+      <td>168.00</td>
+      <td>165.27</td>
+      <td>2.73</td>
+    </tr>
+    <tr>
+      <th>Bob</th>
+      <td>7</td>
+      <td>20.00</td>
+      <td>2</td>
+      <td>40.00</td>
+      <td>5</td>
+      <td>100.00</td>
+      <td>98.25</td>
+      <td>140.00</td>
+      <td>138.25</td>
+      <td>1.75</td>
+    </tr>
+    <tr>
+      <th>Casquette</th>
+      <td>11</td>
+      <td>12.00</td>
+      <td>2</td>
+      <td>24.00</td>
+      <td>9</td>
+      <td>108.00</td>
+      <td>106.11</td>
+      <td>132.00</td>
+      <td>130.11</td>
+      <td>1.89</td>
+    </tr>
+    <tr>
+      <th>Nounours 42</th>
+      <td>9</td>
+      <td>14.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>9</td>
+      <td>126.00</td>
+      <td>123.84</td>
+      <td>126.00</td>
+      <td>123.84</td>
+      <td>2.16</td>
+    </tr>
+    <tr>
+      <th>Banane</th>
+      <td>9</td>
+      <td>12.00</td>
+      <td>2</td>
+      <td>24.00</td>
+      <td>7</td>
+      <td>84.00</td>
+      <td>82.53</td>
+      <td>108.00</td>
+      <td>106.53</td>
+      <td>1.47</td>
+    </tr>
+    <tr>
+      <th>Tour De Cou</th>
+      <td>39</td>
+      <td>2.50</td>
+      <td>4</td>
+      <td>10.00</td>
+      <td>35</td>
+      <td>87.50</td>
+      <td>86.08</td>
+      <td>97.50</td>
+      <td>96.08</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <th>Pull zippé</th>
+      <td>3</td>
+      <td>30.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>90.00</td>
+      <td>88.44</td>
+      <td>90.00</td>
+      <td>88.44</td>
+      <td>1.56</td>
+    </tr>
+    <tr>
+      <th>Polo</th>
+      <td>4</td>
+      <td>21.00</td>
+      <td>1</td>
+      <td>21.00</td>
+      <td>3</td>
+      <td>63.00</td>
+      <td>61.89</td>
+      <td>84.00</td>
+      <td>82.89</td>
+      <td>1.11</td>
+    </tr>
+    <tr>
+      <th>Serviette</th>
+      <td>3</td>
+      <td>25.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>3</td>
+      <td>75.00</td>
+      <td>73.68</td>
+      <td>75.00</td>
+      <td>73.68</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <th>Carnet</th>
+      <td>6</td>
+      <td>10.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>6</td>
+      <td>60.00</td>
+      <td>58.98</td>
+      <td>60.00</td>
+      <td>58.98</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <th>T-shirt</th>
+      <td>4</td>
+      <td>15.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>4</td>
+      <td>60.00</td>
+      <td>58.96</td>
+      <td>60.00</td>
+      <td>58.96</td>
+      <td>1.04</td>
+    </tr>
+    <tr>
+      <th>Pull reduc</th>
+      <td>1</td>
+      <td>32.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>1</td>
+      <td>32.00</td>
+      <td>31.44</td>
+      <td>32.00</td>
+      <td>31.44</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <th>Sticker</th>
+      <td>31</td>
+      <td>1.00</td>
+      <td>5</td>
+      <td>5.00</td>
+      <td>26</td>
+      <td>26.00</td>
+      <td>25.49</td>
+      <td>31.00</td>
+      <td>30.49</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <th>Canard</th>
+      <td>4</td>
+      <td>7.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>4</td>
+      <td>28.00</td>
+      <td>27.52</td>
+      <td>28.00</td>
+      <td>27.52</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <th>Jogging</th>
+      <td>1</td>
+      <td>25.00</td>
+      <td>1</td>
+      <td>25.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>25.00</td>
+      <td>25.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <th>Gourde</th>
+      <td>2</td>
+      <td>10.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>2</td>
+      <td>20.00</td>
+      <td>19.66</td>
+      <td>20.00</td>
+      <td>19.66</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <th>Sticker thermocollant</th>
+      <td>4</td>
+      <td>5.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>4</td>
+      <td>20.00</td>
+      <td>19.65</td>
+      <td>20.00</td>
+      <td>19.65</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <th>Tote bag</th>
+      <td>4</td>
+      <td>4.00</td>
+      <td>1</td>
+      <td>4.00</td>
+      <td>3</td>
+      <td>12.00</td>
+      <td>11.79</td>
+      <td>16.00</td>
+      <td>15.79</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <th>Affiche Nargouse 4 Coas</th>
+      <td>3</td>
+      <td>5.00</td>
+      <td>1</td>
+      <td>5.00</td>
+      <td>2</td>
+      <td>10.00</td>
+      <td>9.83</td>
+      <td>15.00</td>
+      <td>14.83</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>Tasse</th>
+      <td>1</td>
+      <td>10.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>1</td>
+      <td>10.00</td>
+      <td>9.83</td>
+      <td>10.00</td>
+      <td>9.83</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <th>Décapsuleur</th>
+      <td>5</td>
+      <td>1.00</td>
+      <td>2</td>
+      <td>2.00</td>
+      <td>3</td>
+      <td>3.00</td>
+      <td>2.94</td>
+      <td>5.00</td>
+      <td>4.94</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <th>Affiche Acoinus Order</th>
+      <td>1</td>
+      <td>5.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>1</td>
+      <td>5.00</td>
+      <td>4.91</td>
+      <td>5.00</td>
+      <td>4.91</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <th>Cache Caméra</th>
+      <td>4</td>
+      <td>1.00</td>
+      <td>1</td>
+      <td>1.00</td>
+      <td>3</td>
+      <td>3.00</td>
+      <td>2.94</td>
+      <td>4.00</td>
+      <td>3.94</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <th>Tour de cou - seul</th>
+      <td>1</td>
+      <td>2.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>1</td>
+      <td>2.00</td>
+      <td>1.96</td>
+      <td>2.00</td>
+      <td>1.96</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <th>Porte carte seul</th>
+      <td>3</td>
+      <td>0.50</td>
+      <td>1</td>
+      <td>0.50</td>
+      <td>2</td>
+      <td>1.00</td>
+      <td>0.98</td>
+      <td>1.50</td>
+      <td>1.48</td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <div class="block2">
+            <table border="1" class="dataframe mystyle">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Quantities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Clients</th>
+      <td>70</td>
+    </tr>
+    <tr>
+      <th>Articles vendus</th>
+      <td>180</td>
+    </tr>
+    <tr>
+      <th>Staffs</th>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+            <table border="1" class="dataframe mystyle">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Gains (€)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Total Brut</th>
+      <td>1,607.00</td>
+    </tr>
+    <tr>
+      <th>Total Net</th>
+      <td>1,582.77</td>
+    </tr>
+    <tr>
+      <th>Card Brut</th>
+      <td>1,391.50</td>
+    </tr>
+    <tr>
+      <th>Card Net</th>
+      <td>1,367.27</td>
+    </tr>
+    <tr>
+      <th>Cash</th>
+      <td>215.50</td>
+    </tr>
+    <tr>
+      <th>SumUp Fees</th>
+      <td>24.23</td>
+    </tr>
+  </tbody>
+</table>
+            <table border="1" class="dataframe mystyle">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Stats</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Prix moyen d'une conso (€)</th>
+      <td>12.46</td>
+    </tr>
+    <tr>
+      <th>Panier moyen Brut (€)</th>
+      <td>10.76</td>
+    </tr>
+    <tr>
+      <th>Panier moyen Net (€)</th>
+      <td>10.59</td>
+    </tr>
+    <tr>
+      <th>Conso par client</th>
+      <td>2.57</td>
+    </tr>
+    <tr>
+      <th>Gain moyen par Client Brut (€)</th>
+      <td>27.66</td>
+    </tr>
+    <tr>
+      <th>Gain moyen par Client Net (€)</th>
+      <td>27.23</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    </div>
+  </body>
+</html>
+
+<style>/* includes alternating gray and white with on-hover color */
+
+body {
+    background: #424242;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    color: red;
+}
+
+.mystyle {
+    font-size: 11pt;
+    font-family: Arial;
+    border-collapse: collapse;
+    border: 1px solid silver;
+
+}
+
+.mystyle td, th {
+    padding: 5px;
+}
+
+.mystyle tbody tr:nth-child(even) {
+    background: #a4a4a4;
+}
+.mystyle tbody tr:nth-child(odd) {
+    background: #848484;
+}
+
+.mystyle tbody tr:hover {
+    background: #b4b4b4;
+    cursor: pointer;
+}
+
+.blockmain {
+    display: table;
+    margin: 20px;
+}
+.blockmain div {
+    display: table-cell;
+    padding: 20px;
+}
+
+.block2 tr > th:nth-child(1) {
+    column-width: 230px;
+}
+
+.block2 tr > th:nth-child(2) {
+    column-width: 80px;
+}
+
+.total tr:nth-child(1) td {
+    /* font-size: 16px; */
+    font-weight: bold;
+}
+
+.block1 table:nth-child(1) tr > th:nth-child(1) {
+    column-width: 250px !important;
+}
+
+.legend {
+    margin: 10px 10px 10px 0px;
+}
+
+.onelegend {
+    display: table;
+    margin: 5px;
+}
+
+.legend_desc {
+    margin-left: 10px;
+}
+
+.box {
+    display: table-cell;
+    background-color: red;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+.box-median {
+    background: #9d0202;
+}
+
+.box-eighty {
+    background: #376a21;
+}
+
+.box-twenty {
+    background: #5c3de2;
+}
+
+.stats tbody tr:nth-child(5) {
+    background: #9d0202;
+}
+.stats tbody tr:nth-child(11) {
+    background: #376a21;
+}
+</style>
